@@ -3,6 +3,7 @@ package Framework.Utility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.time.Duration;
 
@@ -21,7 +22,19 @@ public class DriverFactory {
             case "chrome":
 
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+
+                ChromeOptions options = new ChromeOptions();
+
+                // Required for GitHub Actions (Linux)
+                if (System.getProperty("os.name").toLowerCase().contains("linux")) {
+
+                    options.addArguments("--headless=new");
+                    options.addArguments("--no-sandbox");
+                    options.addArguments("--disable-dev-shm-usage");
+                    options.addArguments("--window-size=1920,1080");
+                }
+
+                driver = new ChromeDriver(options);
                 break;
 
             default:
