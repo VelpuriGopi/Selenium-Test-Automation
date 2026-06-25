@@ -1,5 +1,6 @@
 package Framework.TestCases;
 
+import Framework.TestCases.Base.BaseTest;
 import Framework.Utility.BillingAddressMethods;
 import Framework.Utility.CartMethods;
 import Framework.Utility.CheckoutLoginMethods;

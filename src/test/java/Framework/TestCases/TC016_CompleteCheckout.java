@@ -1,6 +1,9 @@
 package Framework.TestCases;
 
-import Framework.Utility.*;
+import Framework.TestCases.Base.BaseTest;
+import Framework.Utility.CheckoutFlowMethods;
+import Framework.Utility.DriverFactory;
+import Framework.Utility.PaymentMethods;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,38 +12,11 @@ public class TC016_CompleteCheckout extends BaseTest {
     @Test
     public void completeCheckoutTest() {
 
-        ProductMethods product =
-                new ProductMethods(
+        CheckoutFlowMethods flow =
+                new CheckoutFlowMethods(
                         DriverFactory.getDriver());
 
-        product.openSecondProduct();
-
-        CartMethods cart =
-                new CartMethods(
-                        DriverFactory.getDriver());
-
-        cart.addProductToCart();
-
-        System.out.println(
-                "Product Added To Cart");
-
-        cart.openCart();
-
-        cart.proceedToCheckout();
-
-        CheckoutLoginMethods login =
-                new CheckoutLoginMethods(
-                        DriverFactory.getDriver());
-
-        login.loginToCheckout(
-                "customer@practicesoftwaretesting.com",
-                "welcome01");
-
-        BillingAddressMethods billing =
-                new BillingAddressMethods(
-                        DriverFactory.getDriver());
-
-        billing.fillBillingAddress();
+        flow.navigateToPaymentWithSecondProduct();
 
         PaymentMethods payment =
                 new PaymentMethods(

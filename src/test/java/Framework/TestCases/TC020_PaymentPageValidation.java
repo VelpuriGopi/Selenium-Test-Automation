@@ -1,5 +1,6 @@
 package Framework.TestCases;
 
+import Framework.TestCases.Base.BaseTest;
 import Framework.Utility.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -31,8 +32,8 @@ public class TC020_PaymentPageValidation
                         DriverFactory.getDriver());
 
         login.loginToCheckout(
-                "customer@practicesoftwaretesting.com",
-                "welcome01");
+                "gopi9310@gmail.com",
+                "Ashritha1234@1");
 
         BillingAddressMethods billing =
                 new BillingAddressMethods(

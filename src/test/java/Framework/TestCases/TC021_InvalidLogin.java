@@ -1,6 +1,7 @@
 package Framework.TestCases;
 
 import Framework.Elements.CheckoutLoginPage;
+import Framework.TestCases.Base.BaseTest;
 import Framework.Utility.DriverFactory;
 import Framework.Utility.WaitUtils;
 import org.openqa.selenium.support.PageFactory;

@@ -1,6 +1,7 @@
 package Framework.TestCases;
 
 
+import Framework.TestCases.Base.BaseTest;
 import org.testng.annotations.Test;
 
 public class TC000_LaunchApplication extends BaseTest {

@@ -1,55 +1,31 @@
 package Framework.TestCases;
 
-import Framework.Utility.CartMethods;
+import Framework.TestCases.Base.BaseTest;
+import Framework.Utility.CheckoutFlowMethods;
 import Framework.Utility.CheckoutLoginMethods;
 import Framework.Utility.DriverFactory;
-import Framework.Utility.ProductMethods;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC008_CheckoutSignIn extends BaseTest {
 
-
     @Test
-    public void checkoutSignInTest() throws InterruptedException {
+    public void checkoutSignInTest() {
 
-        ProductMethods product =
-                new ProductMethods(
+        CheckoutFlowMethods flow =
+                new CheckoutFlowMethods(
                         DriverFactory.getDriver());
 
-        product.clickFirstProduct();
-
-        CartMethods cart =
-                new CartMethods(
-                        DriverFactory.getDriver());
-
-        cart.addProductToCart();
-
-        cart.openCart();
-
-        cart.proceedToCheckout();
+        flow.navigateToCheckoutLogin();
 
         CheckoutLoginMethods checkout =
                 new CheckoutLoginMethods(
                         DriverFactory.getDriver());
 
-
-
         checkout.loginToCheckout(
                 "customer@practicesoftwaretesting.com",
                 "welcome01");
 
-        Thread.sleep(5000);
-
-
-
-
-
         System.out.println(
                 "Checkout Login Successful");
-
-
     }
-
-
 }

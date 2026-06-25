@@ -63,10 +63,10 @@ public class RegisterMethods {
                 .sendKeys(data.getData("phone"));
 
         wait.waitForElementVisible(rp.email)
-                .sendKeys(data.getData("registeremail"));
+                .sendKeys(data.getData("registerEmail"));
 
         wait.waitForElementVisible(rp.password)
-                .sendKeys(data.getData("registerpassword"));
+                .sendKeys(data.getData("registerPassword"));
     }
 
     public void clickRegisterButton() {

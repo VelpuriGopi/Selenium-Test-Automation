@@ -1,13 +1,21 @@
 package Framework.TestCases;
 
+import Framework.TestCases.Base.BaseTest;
 import Framework.Utility.BillingAddressMethods;
+import Framework.Utility.CheckoutFlowMethods;
 import Framework.Utility.DriverFactory;
 import org.testng.annotations.Test;
 
 public class TC009_BillingAddress extends BaseTest {
 
     @Test
-    public void billingAddressTest() throws InterruptedException {
+    public void billingAddressTest() {
+
+        CheckoutFlowMethods flow =
+                new CheckoutFlowMethods(
+                        DriverFactory.getDriver());
+
+        flow.navigateToBillingAddress();
 
         BillingAddressMethods billing =
                 new BillingAddressMethods(

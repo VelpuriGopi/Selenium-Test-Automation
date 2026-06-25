@@ -1,5 +1,7 @@
 package Framework.TestCases;
 
+import Framework.TestCases.Base.BaseTest;
+import Framework.Utility.CheckoutFlowMethods;
 import Framework.Utility.DriverFactory;
 import Framework.Utility.PaymentMethods;
 import org.testng.Assert;
@@ -9,6 +11,12 @@ public class TC010_Payment extends BaseTest {
 
     @Test
     public void paymentTest() {
+
+        CheckoutFlowMethods flow =
+                new CheckoutFlowMethods(
+                        DriverFactory.getDriver());
+
+        flow.navigateToPayment();
 
         PaymentMethods payment =
                 new PaymentMethods(

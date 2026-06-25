@@ -1,5 +1,6 @@
 package Framework.TestCases;
 
+import Framework.TestCases.Base.BaseTest;
 import Framework.Utility.DriverFactory;
 import Framework.Utility.SearchMethods;
 import Framework.Utility.SearchResultMethods;

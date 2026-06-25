@@ -1,0 +1,63 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Suite">
+
+    <test name="Regression Tests">
+
+        <classes>
+
+            <class name="Framework.TestCases.TC000_LaunchApplication"/>
+
+            <class name="Framework.TestCases.TC001_Register"/>
+
+            <class name="Framework.TestCases.TC002_Login"/>
+
+            <class name="Framework.TestCases.TC003_Search"/>
+
+            <class name="Framework.TestCases.TC004_Filter"/>
+
+            <class name="Framework.TestCases.TC005_ProductDetails"/>
+
+            <class name="Framework.TestCases.TC006_AddToCart"/>
+
+            <class name="Framework.TestCases.TC007_CheckoutFlow"/>
+
+            <class name="Framework.TestCases.TC008_CheckoutSignIn"/>
+
+            <class name="Framework.TestCases.TC009_BillingAddress"/>
+
+            <class name="Framework.TestCases.TC010_Payment"/>
+
+            <class name="Framework.TestCases.TC012_Logout"/>
+
+            <class name="Framework.TestCases.TC013_CheckoutNavigation"/>
+
+            <class name="Framework.TestCases.TC014_RemoveFromCart"/>
+
+            <class name="Framework.TestCases.TC015_MultipleProductsCart"/>
+
+            <class name="Framework.TestCases.TC016_CompleteCheckout"/>
+
+            <class name="Framework.TestCases.TC017_EmptyCartCheckout"/>
+
+            <class name="Framework.TestCases.TC018_ProductStockValidation"/>
+
+            <class name="Framework.TestCases.TC019_CartCountValidation"/>
+
+            <class name="Framework.TestCases.TC020_PaymentPageValidation"/>
+
+            <class name="Framework.TestCases.TC021_InvalidLogin"/>
+
+            <class name="Framework.TestCases.TC022_SearchNoResults"/>
+
+            <class name="Framework.TestCases.TC023_SortProducts"/>
+
+            <class name="Framework.TestCases.TC024_FilterByPrice"/>
+
+            <class name="Framework.TestCases.TC025_LogoutValidation"/>
+
+        </classes>
+
+    </test>
+
+</suite>
