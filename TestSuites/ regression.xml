@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="AutomationFrameworkSuite">
+
+    <test name="RegressionSuite">
+
+        <classes>
+
+            <class name="Framework.TestCases.TC002_Login"/>
+            <class name="Framework.TestCases.TC006_AddToCart"/>
+            <class name="Framework.TestCases.TC007_CheckoutFlow"/>
+            <class name="Framework.TestCases.TC014_RemoveFromCart"/>
+            <class name="Framework.TestCases.TC021_InvalidLogin"/>
+            <class name="Framework.TestCases.TC022_SearchNoResults"/>
+            <class name="Framework.TestCases.TC023_SortProducts"/>
+            <class name="Framework.TestCases.TC024_FilterByPrice"/>
+            <class name="Framework.TestCases.TC025_LogoutValidation"/>
+
+        </classes>
+
+    </test>
+
+</suite>
