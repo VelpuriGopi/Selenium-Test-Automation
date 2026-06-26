@@ -1,6 +1,6 @@
 package Framework.TestCases;
 
-import Framework.TestCases.Base.BaseTest;
+import Framework.Base.BaseTest;
 import Framework.Utility.DriverFactory;
 import Framework.Utility.LoginMethods;
 import Framework.Utility.LogoutMethods;
@@ -21,8 +21,8 @@ public class TC025_LogoutValidation
                         DriverFactory.getDriver());
 
         login.login(
-                "customer@practicesoftwaretesting.com",
-                "welcome01");
+                "gopi9310@gmail.com",
+                "Ashritha1234@1");
 
         System.out.println(
                 "Login Successful");

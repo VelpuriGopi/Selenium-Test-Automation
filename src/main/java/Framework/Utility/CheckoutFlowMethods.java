@@ -38,8 +38,8 @@ public class CheckoutFlowMethods {
                 new CheckoutLoginMethods(driver);
 
         checkout.loginToCheckout(
-                "customer@practicesoftwaretesting.com",
-                "welcome01");
+                "gopi9310@gmail.com",
+                "Ashritha1234@1");
     }
 
     // Navigate to Payment page

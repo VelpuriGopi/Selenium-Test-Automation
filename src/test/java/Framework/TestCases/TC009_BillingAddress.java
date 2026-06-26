@@ -1,6 +1,6 @@
 package Framework.TestCases;
 
-import Framework.TestCases.Base.BaseTest;
+import Framework.Base.BaseTest;
 import Framework.Utility.BillingAddressMethods;
 import Framework.Utility.CheckoutFlowMethods;
 import Framework.Utility.DriverFactory;

@@ -1,4 +1,4 @@
-package Framework.TestCases.Base;
+package Framework.Base;
 
 import Framework.Utility.ConfigReader;
 import Framework.Utility.DriverFactory;

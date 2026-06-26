@@ -1,6 +1,6 @@
 package Framework.TestCases;
 
-import Framework.TestCases.Base.BaseTest;
+import Framework.Base.BaseTest;
 import Framework.Utility.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;

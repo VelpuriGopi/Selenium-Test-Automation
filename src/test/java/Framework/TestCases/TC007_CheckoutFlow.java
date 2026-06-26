@@ -1,6 +1,6 @@
 package Framework.TestCases;
 
-import Framework.TestCases.Base.BaseTest;
+import Framework.Base.BaseTest;
 import Framework.Utility.BillingAddressMethods;
 import Framework.Utility.CartMethods;
 import Framework.Utility.CheckoutLoginMethods;
@@ -59,8 +59,8 @@ public class TC007_CheckoutFlow extends BaseTest {
                         DriverFactory.getDriver());
 
         login.loginToCheckout(
-                "customer@practicesoftwaretesting.com",
-                "welcome01");
+                "gopi9310@gmail.com",
+                "Ashritha1234@1");
 
         System.out.println(
                 "Checkout Login Successful");
